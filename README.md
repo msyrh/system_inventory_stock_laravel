@@ -168,13 +168,13 @@
         <pre>
             <code>composer require yajra/laravel-datatables-oracle</code>
         </pre>
-        Lakukan konfigurasi di folde config/app.php
+        Lakukan konfigurasi di folder config/app.php
         <pre>
             <code>
                 'providers' => [
                     Yajra\Datatables\DatatablesServiceProvider::class,
                 ],
-
+        dan pada bagian:
                 'aliases' => [
                     'Datatables'=>Yajra\Datatables\Facades\Datatables::class,
                 ],
@@ -191,7 +191,7 @@
                 'providers' => [
                     Maatwebsite\Excel\ExcelServiceProvider::class,
                 ],
-
+        dan pada bagian:
                 'aliases' => [
                     'Excel'=>Maatwebsite\Excel\Facades\Excel::class,
                 ],
@@ -208,7 +208,7 @@
                 'providers' => [
                     Barryvdh\DomPDF\ServiceProvider::class,
                 ],
-
+        dan pada bagian:
                 'aliases' => [
                     'PDF'=>Barryvdh\DomPDF\Facade::class,
                 ],
