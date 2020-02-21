@@ -1,12 +1,4 @@
-<head>
-<style>
-    pre{
-        background-color: black;
-        color: white;
-
-    }
-</style>
-</head>
+<head></head>
 <body>
 <h1 align="center">Sistem Inventory stok Laravel 6</h1>
 
