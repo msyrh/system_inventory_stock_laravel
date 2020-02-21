@@ -96,59 +96,59 @@
 <ul>
     <li>Halaman Login</li>
     <br>
-    <img src="img/login.png" width="50%" alt="sample inventory stock laravel">
+    <img src="img/login.png" width="80%" alt="sample inventory stock laravel">
     <br><br>
     <li>Halaman Register</li>
     <br>
-    <img src="img/registrasi.png"width="50%" alt="sample inventory stock laravel">
+    <img src="img/registrasi.png"width="80%" alt="sample inventory stock laravel">
     <br><br>
     <li>Halaman Utama</li>
     <br>
-    <img src="img/home.png"width="50%" alt="sample inventory stock laravel">
+    <img src="img/home.png"width="80%" alt="sample inventory stock laravel">
     <br><br>
     <li>Halaman Data Kategori</li>
     <br>
-    <img src="img/data_kategori.png"width="50%" alt="sample inventory stock laravel">
+    <img src="img/data_kategori.png"width="80%" alt="sample inventory stock laravel">
     <br><br>
     <li>Halaman Tambah Data Kategori</li>
     <br>
-    <img src="img/tambahdata_kategori.png"width="50%" alt="sample inventory stock laravel">
+    <img src="img/tambahdata_kategori.png"width="80%" alt="sample inventory stock laravel">
     <br><br>
     <li>Halaman Ubah Data Kategori</li>
     <br>
-    <img src="img/ubahdata_kategori.png"width="50%" alt="sample inventory stock laravel">
+    <img src="img/ubahdata_kategori.png"width="80%" alt="sample inventory stock laravel">
     <br><br>
     <li>Halaman Hapus Data Kategori</li>
     <br>
-    <img src="img/hapus_datakategori.png"width="50%" alt="sample inventory stock laravel">
+    <img src="img/hapus_datakategori.png"width="80%" alt="sample inventory stock laravel">
     <br><br>
     <li>Halaman Data Produk</li>
     <br>
-    <img src="img/data_produk.png"width="50%" alt="sample inventory stock laravel">
+    <img src="img/data_produk.png"width="80%" alt="sample inventory stock laravel">
     <br><br>
     <li>Halaman Tambah Data Produk</li>
     <br>
-    <img src="img/tambahdata_produk.png"width="50%" alt="sample inventory stock laravel">
+    <img src="img/tambahdata_produk.png"width="80%" alt="sample inventory stock laravel">
     <br><br>
     <li>Halaman Ubah Data Produk</li>
     <br>
-    <img src="img/ubahdata_produk.png"width="50%" alt="sample inventory stock laravel">
+    <img src="img/ubahdata_produk.png"width="80%" alt="sample inventory stock laravel">
     <br><br>
     <li>Halaman Data Produk Masuk</li>
     <br>
-    <img src="img/data_produkmasuk.png"width="50%" alt="sample inventory stock laravel">
+    <img src="img/data_produkmasuk.png"width="80%" alt="sample inventory stock laravel">
     <br><br>
     <li>Halaman Tambah Data Produk Masuk</li>
     <br>
-    <img src="img/tambahdata_produkmasuk.png"width="50%" alt="sample inventory stock laravel">
+    <img src="img/tambahdata_produkmasuk.png"width="80%" alt="sample inventory stock laravel">
     <br><br>
     <li>Halaman Ubah Data Produk Masuk</li>
     <br>
-    <img src="img/ubahdata_produkmasuk.png"width="50%" alt="sample inventory stock laravel">
+    <img src="img/ubahdata_produkmasuk.png"width="80%" alt="sample inventory stock laravel">
     <br><br>
     <li>Invoice Produk Masuk</li>
     <br>
-    <img src="img/sample_invoice_prodmasuk.png"width="50%" alt="sample inventory stock laravel">
+    <img src="img/sample_invoice_prodmasuk.png"width="80%" alt="sample inventory stock laravel">
     <br>
 </ul>
 
