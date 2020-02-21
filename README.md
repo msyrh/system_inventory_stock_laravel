@@ -217,6 +217,13 @@
     </li>
     <li>Cara 1: Mengkoding program dengan mengetik ulang program mulai dari folder Routes/web.php, resources/Views, App/http/controller, App/imports, App/exports ( sangat disarankan) hehe</li>
     <li>Cara 2: Melakukan CoPas semua folder ke Project laravel yang sudah diunduh, dengan syarat versi laravel/package sama. <b>Note: Jika melakukan clone, folder vendor laravel hasil clone tidak ada (karena size file besar)</b>, Jadi silahkan folder vendor ditambahkan / Copas dari laravel yang telah anda buat</li>
+    <li>Buat Database dengan nama inventory, kemudian lakukan konfigurasi database dengan membuka file .env pada project laravel, silahkan masukan nama database user dan password (jika ada)</li>
+    <li>Jika menggunakan Cara ke 2, tinggal melakukan migrate untuk membuat table database secara otomatis dengan perintah:
+        <pre>
+            <code>php artisan migrate</code>
+        </pre>
+        Akan tetapi jika menggunakan Cara 1, buat file dan melakukan koding terlebih dahulu pada folder Databases/migrations/ serta membuat file model pada folder App/ 
+    </li>
 </ul>
 
 <p><b>Note :</b> Data screenshote merupakan sample, jika terdapat kesamaan nama atau tempat, silahkan konfirmasi sehingga akan segera saya tarik/ganti</p>
