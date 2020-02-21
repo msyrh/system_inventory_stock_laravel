@@ -226,6 +226,6 @@
     </li>
 </ul>
 
-<p><b>Note :</b> Data screenshote merupakan sample, jika terdapat kesamaan nama atau tempat, silahkan konfirmasi sehingga akan segera saya tarik/ganti</p>
+<p><b>Note :</b> Data screenshot merupakan sample, jika terdapat kesamaan nama atau tempat, silahkan konfirmasi sehingga akan segera saya tarik/ganti</p>
 <h3>Semoga Bermanfaat, silahkan tanyakan jika terdapat kendala</h3>
 </body>
