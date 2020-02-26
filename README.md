@@ -217,7 +217,7 @@
     </li>
     <li>Cara 1: Mengkoding program dengan mengetik ulang program mulai dari folder Routes/web.php, resources/Views, App/http/controller, App/imports, App/exports ( sangat disarankan) hehe</li>
         <ul>
-            <li>Pstikan posisi kursor berada di folder project laravel kita</li>
+            <li>Pastikan posisi kursor berada di folder project laravel kita</li>
             <li>Membuat file Model dengan perintah 
                 <pre><code>php artisan make:model [nama_model]</code></pre>
                 misalkan membuat model dengan nama Category maka:
