@@ -252,6 +252,24 @@
                 <b>->name()</b> digunakan untuk memberikan nama pada route tersebut, sehingga dapat memudahkan ketika kita memanggilnya misalkan penggunaannya dalam tag link, sehingga pada bagian href="" didalamnya route('api.categories'), route yang pernah kita buat dapat di lihat dengan memberikan perintah diterminal /cmd dengan posisi di dalam folder project kita
                 <pre><code>php artisan route:list</code></pre>
             </li>
+            <li>Membuat role admin/staff, pertama menambahkan code ini 'role' di App/kernel.php
+                <pre><code>protected $routeMiddleware = [
+        ...
+        'role' => \App\Http\Middleware\Role::class,
+   ];</code></pre>
+                kemudian menambahkan _construct di masing masing controller, misalkan CategoryController hanya admin yang boleh akses, maka perlu ditambahkan kode berikut:
+                <pre><code>public function __construct()
+    {
+        $this→middleware('role:admin,user'); //silahkan tambah atau kurangi sesuai ketentuan anda
+    }</code></pre>
+                kemudian menambahkan code di Routes/web.php, untuk membungkus seluruh route agar selalu melalui role dahulu sebelum execut
+                <pre><code>
+    Route::group(['middleware'=>'auth'],function(){
+        Route::resource('Category','CategoryController'); //hanya sample
+        Route::get('/apiCategories','CategoryController@apiCategories')->name('api.categories');
+    });</code></pre>
+                Dari ketentuan tersebut maka, controller category atau halaman kategory hanya dapat diakses oleh admin, staff tidak dapat melakukannya,
+            </li>
         </ul>
     <li>Cara 2: Melakukan CoPas semua folder ke Project laravel yang sudah diunduh, dengan syarat versi laravel/package sama. <b>Note: Jika melakukan clone, folder vendor laravel hasil clone tidak ada (karena size file besar)</b>, Jadi silahkan folder vendor ditambahkan / Copas dari laravel yang telah anda buat</li>
     <li>Buat Database dengan nama inventory, kemudian lakukan konfigurasi database dengan membuka file .env pada project laravel, silahkan masukan nama database user dan password (jika ada)</li>
