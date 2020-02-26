@@ -216,6 +216,43 @@
         </pre>
     </li>
     <li>Cara 1: Mengkoding program dengan mengetik ulang program mulai dari folder Routes/web.php, resources/Views, App/http/controller, App/imports, App/exports ( sangat disarankan) hehe</li>
+        <ul>
+            <li>Pstikan posisi kursor berada di folder project laravel kita</li>
+            <li>Membuat file Model dengan perintah 
+                <pre><code>php artisan make:model [nama_model]</code></pre>
+                misalkan membuat model dengan nama Category maka:
+                <pre><code>php artisan make:model Category --resource</code></pre>
+                file model tersebut akan tersimpan di App/ dengan nama Category.php, jika dalam membuat model tersebut ditambahkan <b> -m </b>maka akan membuat file migrate di dalam folder Database/migrate/ dengan nama file <b>2019_08_19_600000_create_tabel_Category</b> </li>
+            <li>Membuat file Controller dengan perintah 
+                <pre><code>php artisan make:controller [nama_controller]</code></pre>
+                misalkan membuat CategoryController maka:
+                <pre><code>php artisan make:controller CategoryController --resource</code></pre>
+                <b>--resource</b> digunakan untuk membuat method store, destroy, edit, update, index secara otomatis didalam controller yang dibuat. file controller akan tersimpan di App/http/controller/ </li>
+            <li>Membuat file Views dengan perintah
+                <pre><code>php artisan make:view folder.namafile</code></pre>
+                misalkan membuat view kategori dan dilamnya ada index.blade.php maka:
+                <pre><code>php artisan make:view kategori.index</code></pre>
+                file yang dibuat akan tersimpan di resources/views/kategori/ dengan nama index.blade.php
+            </li>
+            <li>Membuat file import dengan perintah
+                <pre><code>php artisan make:import namafile</code></pre>
+                misalkan membuat file import kategori maka:
+                <pre><code>php artisan make:import importCategory</code></pre>
+                file yang dibuat akan tersimpan di App/imports/ dengan nama importCategory.php
+            </li>
+            <li>Membuat file export dengan perintah
+                <pre><code>php artisan make:export namafile</code></pre>
+                misalkan membuat file export kategori maka:
+                <pre><code>php artisan make:export exportCategory</code></pre>
+                file yang dibuat akan tersimpan di App/exports/ dengan nama exportCategory.php</li>
+            <li>Membuat route, dengan menambahkan code di routes/web.php jika route ini untuk mengembangkan web, misal:
+                <pre><code>Route::get('/link_diurl','namacontroller@namamethod')</code></pre>
+                jika menerapkannya dalam membuat route 
+                <pre><code>Route::get('/apiCategories','CategoryController@apiCategories')->name('api.categories');</code></pre>
+                <b>->name()</b> digunakan untuk memberikan nama pada route tersebut, sehingga dapat memudahkan ketika kita memanggilnya misalkan penggunaannya dalam tag link, sehingga pada bagian href="" didalamnya route('api.categories'), route yang pernah kita buat dapat di lihat dengan memberikan perintah diterminal /cmd dengan posisi di dalam folder project kita
+                <pre><code>php artisan route:list</code></pre>
+            </li>
+        </ul>
     <li>Cara 2: Melakukan CoPas semua folder ke Project laravel yang sudah diunduh, dengan syarat versi laravel/package sama. <b>Note: Jika melakukan clone, folder vendor laravel hasil clone tidak ada (karena size file besar)</b>, Jadi silahkan folder vendor ditambahkan / Copas dari laravel yang telah anda buat</li>
     <li>Buat Database dengan nama inventory, kemudian lakukan konfigurasi database dengan membuka file .env pada project laravel, silahkan masukan nama database user dan password (jika ada)</li>
     <li>Jika menggunakan Cara ke 2, tinggal melakukan migrate untuk membuat table database secara otomatis dengan perintah:
